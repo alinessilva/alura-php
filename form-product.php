@@ -2,11 +2,19 @@
 
     <h1>Formulário de Produto</h1>
     <form action="add-product.php">
-        <label for="">Nome</label>
-        <input type="text" name="name"><br/>
-        <label for="">Preço</label>
-        <input type="number" name="price"><br/>
-        <input type="submit" value="Cadastrar">
+        <table class="table">
+            <tr>
+                <td>Nome</td>
+                <td><input class="form-control" type="text" name="name"></td>
+            </tr>
+            <tr>
+                <td>Preço</td>
+                <td><input class="form-control" type="number" name="price"></td>
+            </tr> 
+            <tr>
+                <td><button class="btn btn-primary"type="submit">Cadastrar</button></td>
+            </tr>
+        </table>    
     </form>
 
 <?php include("footer.php"); ?>

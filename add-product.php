@@ -13,9 +13,11 @@ function addProduct($connection, $name, $price){
     //mysqli_close($connection);
 
 if (addProduct($connection, $name, $price)) { ?>
-    <p class="alert-sucess">Produto, <?= $name; ?>, <?= $price ?> adicionado com sucesso!</p>
-<?php } else { ?>
-    <p class="alert-danger">O produto <?= $name ?>, não foi adicionado.</p>
+    <p class="text-sucess">Produto, <?= $name; ?>, <?= $price ?> adicionado com sucesso!</p>
+<?php } else { 
+    $msg = mysqli_error($connection);
+?>
+    <p class="text-danger">O produto <?= $name ?>, não foi adicionado. Motivo: <?= $msg?></p>
 <?php
 }
 ?>

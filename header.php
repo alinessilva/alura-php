@@ -4,11 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="style.css">
+   
     <title>Loja Virtual</title>
 </head>
 <body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark ">
+        <div class="container">
+            <a class="navbar-brand" href="index.php">Home</a>
+        <div>
+            <ul class="nav navbar-nav">
+                <li class="nav-item"><a class="nav-link active" href="form-product.php">Adiciona Produto</a></li>
+                <li class="nav-item"><a class="nav-link" href="sobre.php">Sobre</a></li>
+            </ul>
+        </div>
+    </nav>
+
     <div class="container">
         <div class="main">
