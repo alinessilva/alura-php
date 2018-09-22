@@ -1,4 +1,5 @@
 <?php include("header.php"); ?>
+<?php include("connection.php"); ?>
 
 <?php
 
@@ -8,7 +9,6 @@ function addProduct($connection, $name, $price){
 }
     $name = $_GET['name'];
     $price = $_GET['price'];
-    $connection = mysqli_connect('localhost', 'root', 'dev@1234', 'loja');
     
     //mysqli_close($connection);
 
