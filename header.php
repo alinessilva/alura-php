@@ -18,7 +18,7 @@
         <div>
             <ul class="nav navbar-nav">
                 <li class="nav-item"><a class="nav-link active" href="form-product.php">Adiciona Produto</a></li>
-                <li class="nav-item"><a class="nav-link" href="sobre.php">Sobre</a></li>
+                <li class="nav-item"><a class="nav-link" href="list-product.php">Produtos</a></li>
             </ul>
         </div>
     </nav>
