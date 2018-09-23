@@ -15,11 +15,12 @@
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark ">
         <div class="container">
             <a class="navbar-brand" href="index.php">Home</a>
-        <div>
-            <ul class="nav navbar-nav">
-                <li class="nav-item"><a class="nav-link active" href="form-product.php">Adiciona Produto</a></li>
-                <li class="nav-item"><a class="nav-link" href="list-product.php">Produtos</a></li>
-            </ul>
+            <div>
+                <ul class="nav navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="form-product.php">Adiciona Produto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="list-product.php">Produtos</a></li>
+                </ul>
+            <div>
         </div>
     </nav>
 
