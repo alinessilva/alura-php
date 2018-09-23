@@ -1,16 +1,9 @@
-<?php include("header.php"); ?>
-<?php include("connection.php"); ?>
+<?php include("header.php");
+include("connection.php");
+include("bd-products.php");
 
-<?php
-
-function addProduct($connection, $name, $price){
-    $query = "insert into products (name, price) values ('{$name}', {$price})";
-    return mysqli_query($connection, $query);
-}
-    $name = $_GET['name'];
-    $price = $_GET['price'];
-    
-    //mysqli_close($connection);
+$name = $_GET['name'];
+$price = $_GET['price'];
 
 if (addProduct($connection, $name, $price)) { ?>
     <p class="text-sucess">Produto, <?= $name; ?>, <?= $price ?> adicionado com sucesso!</p>
