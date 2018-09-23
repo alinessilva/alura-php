@@ -4,8 +4,8 @@ include("bd-products.php");
 
 $products_id = $_GET['products_id'];
 removeProduct($connection, $products_id);
+header("Location: list-product.php?removed=true");
+die();
 ?>
-
-<p class="text-success">Produto <?=$products_id?> removido!</p>
 
 <?php include("footer.php"); ?>

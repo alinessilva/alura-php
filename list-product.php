@@ -2,6 +2,11 @@
 include("connection.php");
 include("bd-products.php");?>
 
+<?php if (array_key_exists("removed", $_GET) && $_GET["removed"]==true){?>
+    <p class="alert-success">Produto removido com sucesso!</p>
+<?php } ?>
+
+
 <table class="table table-striped table-bordered">
     <?php
         $products = listProducts($connection);
